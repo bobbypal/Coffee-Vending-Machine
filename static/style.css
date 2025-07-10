@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+h1, h2, h3 {
+  color: #333;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input, select, button {
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+.error {
+  color: red;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+#footer {
+  background: linear-gradient(135deg, #232526, #414345);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#footer h2 {
+  color: #00bcd4;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #80deea;
+  transition: color 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  color: #ffffff;
+}
+
+#footer .form-control {
+ background-color: #2c2f33; /* Dark background */
+  color: #ffffff;            /* White text */
+  border: 1px solid #555;    /* Optional border */
+  border-radius: 10px;
+}
+
+#footer .btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+#footer .form-control::placeholder {
+  color: #cccccc;            /* Light placeholder text */
+}
+#footer .form-control:focus {
+  outline: none;
+  border-color: #00bcd4;     /* Cyan border on focus */
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+
+
+
+
+
+
+
+

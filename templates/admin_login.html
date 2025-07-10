@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login - Smart Coffee Machine</title>
+  <link rel="stylesheet" href="/static/css/admin_login.css" />
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Header styling same as index.html */
+    .header {
+      background-color:black;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc80;
+    }
+
+    /* Login container */
+    .container {
+      max-width: 400px;
+      margin: 80px auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #3e2723;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3e2723;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5d4037;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+      color: #3e2723;
+      text-decoration: none;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer same as index.html */
+    .footer {
+      background-color:grey;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 60px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+<!-- Header (same as index.html) -->
+  <div class="header">
+     <a href="#Movetohome" class="nav-link px-2">
+              <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo" style="height: 60px; width: auto; object-fit: contain;">
+            </a>
+    
+  </div>
+
+
+
+
+
+
+
+  <!-- Login Form -->
+  <div class="container">
+    <h2>Admin Login</h2>
+    {% if error %}<p class="error">{{ error }}</p>{% endif %}
+    <form method="POST">
+      <label>Username:</label>
+      <input type="text" name="username" required>
+      <label>Password:</label>
+      <input type="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <a href="/" class="back-link">← Back to Home</a>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Footer (same as index.html) -->
+  <div class="footer">
+    <p>&copy; 2025 coffee vending machine | Designed with ❤️ Adil & Bobby</p>
+  </div>
+
+</body>
+</html>

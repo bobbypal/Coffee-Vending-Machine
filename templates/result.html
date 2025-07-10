@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Result</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .header img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+      color: #2E2E2E;
+    }
+
+    .container a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2E2E2E;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .container a:hover {
+      background-color: #1f1f1f;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #2E2E2E; /* Darker than grey, lighter than black */
+      color: #ddd;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .footer span {
+      color: #f06292;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="#Movetohome" class="nav-link">
+      <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+    </a>
+  </div>
+
+  <!-- Result Container -->
+  <div class="container">
+    <h2>Transaction Result</h2>
+    <p>{{ message }}</p>
+    <a href="/">Back to Home</a>
+  </div>
+
+  <!-- Engaging Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Coffee Vending Machine | Designed with <span>❤️</span> Adil & Bobby</p>
+  </div>
+
+</body>
+</html>
